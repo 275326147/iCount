@@ -31,4 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     });
+
+    $('#btn2').addEventListener('click', function (event) {
+        robot.moveMouse(540, 770);
+        robot.mouseClick();
+        setTimeout(function () {
+            robot.typeString("275326147");
+            robot.keyTap("enter");
+        }, 2000);
+    });
 });
