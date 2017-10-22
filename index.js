@@ -33,11 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $('#btn2').addEventListener('click', function (event) {
-        robot.moveMouse(540, 770);
-        robot.mouseClick();
+        var x = $('#input3_x').value;
+        var y = $('#input3_y').value;
+        var content = $('#input3_content').value;
+        var double = $('#input3_count').value > 1 ? true : false;
+        var key = $('#input3_key').value;
+        robot.moveMouse(parseInt(x), parseInt(y));
+        robot.mouseClick("left", double);
         setTimeout(function () {
-            robot.typeString("275326147");
-            robot.keyTap("enter");
-        }, 2000);
+            robot.typeString(content);
+            robot.keyTap(key);
+        }, 1000);
     });
 });

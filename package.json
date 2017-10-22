@@ -5,8 +5,8 @@
   "window": {
     "title": "智能识别系统",
     "toolbar": false,
-    "width": 600,
-    "height": 500,
+    "width": 650,
+    "height": 550,
     "resizable": false,
     "show_in_taskbar": true,
     "frame": true,
